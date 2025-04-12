@@ -1,0 +1,56 @@
+.bgimage {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 400px;
+}
+
+.ti {
+    font-size: 120px;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+    1px 1px 0 black,
+   -1px -1px 0 black,
+    1px -1px 0 black,
+   -1px 1px 0 black;
+}
+
+.page {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap{
+    padding-bottom: 250px;
+}
+
+.f {
+    margin-bottom: 20px; 
+    font-size: x-large; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.p {
+    font-size: x-large; 
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1100px) {
+    .ti {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ty {
+        font-size: 80px;
+    }
+}
+
+.footer {
+    background-color: rgb(60, 75, 60); 
+    padding-top: 30px;
+  }
