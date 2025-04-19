@@ -5,26 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-const toastTrigger = document.getElementById('toastTrigger');
-const toastAlert = document.getElementById('toastAlert');
-
-
-if (toastTrigger) {
-    toastTrigger.addEventListener('click', () => {
-        const toast = new bootstrap.Toast(toastAlert);
-        toast.show();
-    });
-}
-
-/*document.addEventListener('DOMContentLoaded', function () {
-    var toastEl = document.querySelector('.toast');
-    var toast = new bootstrap.Toast(toastEl);
-    toast.show();
-});
-
-
-const toastElList = document.querySelectorAll(".toast");
-const toastList = [...toastElList].map((toastEl) => {
-    const toast = new bootstrap.Toast(toastEl, {});
-    toast.show();
-});*/
+const toastTrigger = document.getElementById('liveToastBtn');
+         const toastLiveExample = document.getElementById('liveToast');
+       
+         if (toastTrigger) {
+           toastTrigger.addEventListener('click', () => {
+             const toast = new bootstrap.Toast(toastLiveExample);
+             toast.show();
+           });
+         }

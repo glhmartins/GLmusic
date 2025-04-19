@@ -45,8 +45,14 @@
 }
 
 @media (max-width: 480px) {
-    .ty {
+    .ti {
         font-size: 80px;
+    }
+}
+
+@media (max-width: 320px) {
+    .ti {
+        font-size: 60px;
     }
 }
 

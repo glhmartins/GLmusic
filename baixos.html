@@ -1,195 +1,186 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-        <link href="assets/css/bootstrap.css" rel="stylesheet">
-        <link href="assets/css/all.css" rel="stylesheet">
-        <link href="assets/css/styles.css" rel="stylesheet">
-        <title>Baixos</title>
-    </head>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+      <link href="assets/css/styles.css" rel="stylesheet">
+
+      <title>GLmusic</title>
+   </head>
     
-    <body style="background-color: rgb(30, 40, 30);">
+   <body style="background-color: rgb(30, 40, 30); padding-top: 100px;">
 
-      <nav class="navbar fixed-top navbar-dark navbar-expand-md mb-3" style="background-color: rgb(60, 75, 60);" >   
-  
-           <div class = "container-fluid">
-  
-            <a class = "navbar-brand" href = "index.html"> <img src = "assets/images/logo.png" style="width: 180px; height: 100px;" alt = "GlMusic"> </a>
-  
-              <button class = "navbar-toggler" type = "button" data-toggle="collapse" data-target="#menu"
-                    aria-controls="menu" aria-expanded="false" aria-label="Botão do menu">
-                 <span class = "navbar-toggler-icon"></span>   
-              </button>
-  
-              <div class = "collapse navbar-collapse" id = "menu">
-  
-                 <div class = "navbar-nav mr-auto" style="font-size: x-large; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
-  
-                    <a class = "nav-link nav-item" href = "guitarras.html" style="color: white;">Guitarras</a>
-                    <a class = "nav-link nav-item" href = "baixos.html" style="color: white;" >Baixos</a>
-                    <a class = "nav-link nav-item" href = "pedais.html" style="color: white;">Pedais</a>
-                    <a class = "nav-link nav-item" href = "amplificadores.html" style="color: white;">Amplificadores
-                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                     +1
-                     <span class="visually-hidden">Produto</span>
-                   </span></a> 
-                    
-                 </div>
-  
-                 <div class = "navbar-nav" style="font-size: x-large; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
-                    <a class = "nav-link nav-item" href = "#janelamodal" style="color: white;"><i class="fas fa-sign-in-alt"></i> Login</a>
-                 </div>
-  
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-dark navbar-expand-md mb-3" style="background-color: rgb(60, 75, 60);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" style="width: 180px; height: 100px;" alt="GlMusic">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expanded="false" aria-label="Botão do menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <div class="navbar-nav me-auto"
+            style="font-size: x-large; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+            <a class="nav-link" href="guitarras.html" style="color: white;">Guitarras</a>
+            <a class="nav-link" href="baixos.html" style="color: white;">Baixos</a>
+            <a class="nav-link" href="pedais.html" style="color: white;">Pedais</a>
+            <a class="nav-link" href="amplificadores.html" style="color: white;">Amplificadores</a>
+          </div>
+          <div class="navbar-nav"
+            style="font-size: x-large; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+            <a class="nav-link" href="#janelamodal" style="color: white;"><i class="fas fa-sign-in-alt"></i> Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carrossel -->
+    <div id="carousel-id" class="carousel slide d-none d-md-block mb-4" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="amplificadores.html">
+            <img src="assets/images/Carrosel/C1.jpg" class="d-block bgimage">
+            <div class="carousel-caption" style="top:100px">
+              <div class="text-center">
+                <span class="ti">Amplificadores</span>
               </div>
-  
-           </div>
-
-        </nav>
-
-        <br><br>
-
-        <div id="carousel-id" class = "carousel slide d-none d-md-block mb-4" style = "margin-top: 69px;" data-ride= "carousel" data-interval = "3000">
-            <ol class = "carousel-indicators">
-               <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
-               <li data-target="#carousel-id" data-slide-to="1"></li>
-               <li data-target="#carousel-id" data-slide-to="2"></li>
-               <li data-target="#carousel-id" data-slide-to="3"></li>
-            </ol>
-            <div class = "carousel-inner">
-               <div class = "carousel-item active">
-                  <a href="amplificadores.html"><img src = "assets/images/Carrosel/C1.jpg" class="d-block bgimage">
-                     <div class="carousel-caption" style="top:100px">
-                        <div class="text-center">
-                           <span class="ti" style="text-align: center;">Amplificadores</span>
-                        </div>
-                     </div>
-                  </a>
-               </div>  
-               <div class = "carousel-item ">
-                  <a href="baixos.html">
-                     <img src = "assets/images/Carrosel/C2.jpg" class="d-block bgimage">
-                     <div class="carousel-caption" style="top: 100px ">
-                        <div class="text-center">
-                           <span class="ti">Baixos</span>
-                        </div>
-                     </div>
-                  </a>
-               </div>     
-               <div class = "carousel-item ">
-                  <a href="guitarras.html">
-                     <img src = "assets/images/Carrosel/C3.jpg" class="d-block bgimage">
-                     <div class="carousel-caption" style="top: 100px">
-                        <div class="text-center">
-                           <span class="ti" style="color: rgb(255, 255, 255);">Guitarras</span>
-                        </div>
-                     </div>
-                  </a>
-               </div>     
-               <div class = "carousel-item ">
-                  <a href="pedais.html">
-                  <img src = "assets/images/Carrosel/C4.jpg" class="d-block bgimage">
-                  <div class="carousel-caption" style="top: 100px">
-                     <div class="text-center">
-                        <span class="ti">Pedais</span>
-                     </div>
-                  </div>
-                  </a>
-               </div>            
             </div>
-            <a href="#carousel-id" class="carousel-control-prev" role="button" data-slide="prev">
-               <span aria-hidden="true" class="carousel-control-prev-icon">
-                  <span class="sr-only">Anterior</span>
-               </span>
+          </a>
+        </div>
+        <div class="carousel-item">
+            <a href="baixos.html">
+               <img src="assets/images/Carrosel/C2.jpg" class="d-block bgimage">
+               <div class="carousel-caption" style="top: 100px">
+                  <div class="text-center">
+                  <span class="ti">Baixos</span>
+                  </div>
+               </div>
             </a>
-            <a href="#carousel-id" class="carousel-control-next" role="button" data-slide="next">
-               <span aria-hidden="true" class="carousel-control-next-icon">
-                  <span class="sr-only">Próxima</span>
-   
-               </span>
+        </div>
+        <div class="carousel-item">
+            <a href="guitarras.html">
+               <img src="assets/images/Carrosel/C3.jpg" class="d-block bgimage">
+               <div class="carousel-caption" style="top: 100px">
+                  <div class="text-center">
+                     <span class="ti">Guitarras</span>
+                  </div>
+               </div>
             </a>
          </div>
-  
-        <div class="row" style="padding-bottom: 69px;">
+        <div class="carousel-item">
+            <a href="pedais.html">
+               <img src="assets/images/Carrosel/C4.jpg" class="d-block bgimage">
+               <div class="carousel-caption" style="top: 100px">
+                  <div class="text-center">
+                     <span class="ti">Pedais</span>
+                  </div>
+               </div>
+            </a>
+         </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-id" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-id" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próxima</span>
+      </button>
+    </div>
+    
+      <!--Produtos-->
+      <div class="row" style="padding-bottom: 69px;">
             <div class = "col-lg-3 col-md-6">
                 <div class = "card mb-4" style="margin-top: 80px;">
-                    <img src="assets/images/Baixos/AB2.4 Car.png " style="height: 400px; width: 500;" class = "mx-auto d-block img-fluid img-custom">
+                    <img src="assets/images/Baixos/AB2.4 Car.png " style="max-height: 400px;" class = "mx-auto d-block img-fluid img-custom">
                     <div class = "text-center">
-                        <h5 class = "card-title f">AB2.4 Car</h5>
+                        <h5 class = "card-title f">Solar AB2.4 Car</h5>
                         <p class="p">R$6500,00</p>
                         <p>10x R$650,00 sem juros</p>
-                        <button style="font-size:20px; color: white;" type="button" class="btn btn-primary" data-bs-toggle="popover" title="Não funciona, sorry">Comprar</button>
+                        <button style="font-size:20px; color: white;" type="button" class="btn btn-primary" data-bs-toggle="popover" title="Em manutenção">Comprar</button>
                     </div>
                 </div>
             </div>
             
             <div class = "col-lg-3 col-md-6">
                 <div class = "card mb-4" style="margin-top: 80px;">
-                    <img src="assets/images/Baixos/E2.4C Bop.png" style="height: 400px; width: 500;" class = "mx-auto d-block img-fluid img-custom">
+                    <img src="assets/images/Baixos/E2.4C Bop.png" style="max-height: 400px;" class = "mx-auto d-block img-fluid img-custom">
                     <div class = "text-center">
-                        <h5 class = "card-title f">E2.4C Bop</h5>
+                        <h5 class = "card-title f">Solar E2.4C Bop</h5>
                         <p class="p">R$4990,90</p>
                         <p>10x R$499,09 sem juros</p>
-                        <button style="font-size:20px; color: white;" type="button" class="btn btn-primary" data-bs-toggle="popover" title="Não funciona, sorry">Comprar</button>
+                        <button style="font-size:20px; color: white;" type="button" class="btn btn-primary" data-bs-toggle="popover" title="Em manutenção">Comprar</button>
                     </div>
                 </div>
             </div>
 
             <div class = "col-lg-3 col-md-6">
                 <div class = "card mb-4" style="margin-top: 80px;">
-                    <img src="assets/images/Baixos/Ibanez BTB 5.png" style="height: 400px; width: 500;" class = "mx-auto d-block img-fluid img-custom">
+                    <img src="assets/images/Baixos/Ibanez BTB 5.png" style="max-height: 400px;" class = "mx-auto d-block img-fluid img-custom">
                     <div class = "text-center">
                         <h5 class = "card-title f">Ibanez BTB 5</h5>
                         <p class="p">R$13.999,00</p>
                         <p>10x R$1399,90 sem juros</p>
-                        <button style="font-size:20px; color: white;" type="button" class="btn btn-primary" data-bs-toggle="popover" title="Não funciona, sorry">Comprar</button>
+                        <button style="font-size:20px; color: white;" type="button" class="btn btn-primary" data-bs-toggle="popover" title="Em manutenção">Comprar</button>
                     </div>
                 </div>
             </div>
 
             <div class = "col-lg-3 col-md-6">
                 <div class = "card mb-4" style="margin-top: 80px;">
-                    <img src="assets/images/Baixos/Ibanez SR.png" style="height: 400px; width: 500;" class = "mx-auto d-block img-fluid img-custom">
+                    <img src="assets/images/Baixos/Ibanez SR.png" style="max-height: 400px;" class = "mx-auto d-block img-fluid img-custom">
                     <div class = "text-center">
                         <h5 class = "card-title f">Ibanez SR</h5>
                         <p class="p">R$4000,00</p>
                         <p>10x R$400,00 sem juros</p>
-                        <button style="font-size:20px; color: white;" type="button" class="btn btn-primary" data-bs-toggle="popover" title="Não funciona, sorry">Comprar</button>
+                        <button style="font-size:20px; color: white;" type="button" class="btn btn-primary" data-bs-toggle="popover" title="Em manutenção">Comprar</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="footer">
-         <div class = "container">
-            <div class = "row">
-               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6" style="padding-bottom: 50px;">
-                  <img src="assets/images/logo.png">
+      <!-- Rodapé -->
+      <div class="footer">
+         <div class="container text-center">
+         <div class="row text-white">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 pb-5">
+               <img src="assets/images/logo.png">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 pb-5 text-center">
+               <h5 class="fs-3">Redes Sociais</h5>
+               <div class="nav flex-column">
+               <a class="nav-link text-white" href="#instagram"><i class="fab fa-instagram fs-4"></i> Instagram</a>
+               <a class="nav-link text-white" href="#youtube"><i class="fab fa-youtube fs-4"></i> Youtube</a>
                </div>
-               <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3" style="padding-bottom: 50px;">
-                  <h5 style="color: rgb(255, 255, 255); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 34px; text-align: center;">Redes Sociais</h5>
-                  <div class = "navbar-nav" style="font-size: 20px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">
-                     <a class = "nav-link nav-item" href = "#instagram" style="color: white;"><i class="fab fa-instagram" style="font-size: 32px;"></i> Instagram</a>
-                     <a class = "nav-link nav-item" href = "#youtube" style="color: white;"><i class="fab fa-youtube" style="font-size: 32px"></i> Youtube</a>
-                  </div>
-         
-               </div>
-               <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3">
-                  <h5 style="color: rgb(255, 255, 255); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 34px; text-align: center;">Contato</h5>
-                  <div class = "navbar-nav" style="font-size: 20px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">
-                     <a class = "nav-link nav-item" href = "#email" style="color: white;"><i class="fas fa-envelope" style="font-size: 32px"></i> GLmusic@gmail.com</a>
-                     <a class = "nav-link nav-item" href = "#telefone" style="color: white;"><i class="fas fa-phone" style="font-size: 32px;"></i> (99)99999-9999</a>
-                  </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 text-center">
+               <h5 class="fs-3">Contato</h5>
+               <div class="nav flex-column">
+               <a class="nav-link text-white" href="#email"><i class="fas fa-envelope fs-4"></i> GLmusic@gmail.com</a>
+               <a class="nav-link text-white" href="#telefone"><i class="fas fa-phone fs-4"></i> (99)99999-9999</a>
                </div>
             </div>
          </div>
-      </div> 
+         </div>
+      </div>
   
-        <script src="assets/js/jquery-3.3.1.js"></script>
-        <script src="assets/js/popper.js"></script>
-        <script src="assets/js/bootstrap.js"></script>
-        <script src="assets/js/script.js"></script>     
+      <!-- Scripts -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/script.js"></script>   
   
      </body>
 

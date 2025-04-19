@@ -3,187 +3,198 @@
 
    <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-      <link href="assets/css/bootstrap.css" rel="stylesheet">
-      <link href="assets/css/all.css" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
       <link href="assets/css/styles.css" rel="stylesheet">
+
       <title>GLmusic</title>
    </head>
 
-   <div style="background-color: rgb(30, 40, 30);">
+   <body style="background-color: rgb(30, 40, 30); padding-top: 100px;">
 
-      <nav class="navbar fixed-top navbar-dark navbar-expand-md mb-3" style="background-color: rgb(60, 75, 60);" > 
-
-         <div class = "container-fluid">
-
-            <a class = "navbar-brand" href = "index.html"> <img src = "assets/images/logo.png" style="width: 180px; height: 100px;" alt = "GlMusic"> </a>
-
-            <button class = "navbar-toggler" type = "button" data-toggle="collapse" data-target="#menu"
-                  aria-controls="menu" aria-expanded="false" aria-label="Botão do menu">
-               <span class = "navbar-toggler-icon"></span>   
-            </button>
-
-            <div class = "collapse navbar-collapse" id = "menu">
-
-               <div class = "navbar-nav mr-auto" style="font-size: x-large; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
-
-                  <a class = "nav-link nav-item" href = "guitarras.html" style="color: white;">Guitarras</a>
-                  <a class = "nav-link nav-item" href = "baixos.html" style="color: white;" >Baixos</a>
-                  <a class = "nav-link nav-item" href = "pedais.html" style="color: white;">Pedais</a>
-                  <a class = "nav-link nav-item" href = "amplificadores.html" style="color: white;">Amplificadores
-                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                     +1
-                     <span class="visually-hidden">Produto</span>
-                   </span></a> 
-                  
-               </div>
-
-               <div class = "navbar-nav" style="font-size: x-large; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
-                  <a class = "nav-link nav-item" href = "#janelamodal" style="color: white;"><i class="fas fa-sign-in-alt"></i> Login</a>
-               </div>
-
+      <!-- Navbar -->
+      <nav class="navbar fixed-top navbar-dark navbar-expand-md mb-3" style="background-color: rgb(60, 75, 60);">
+         <div class="container-fluid">
+         <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.png" style="width: 180px; height: 100px;" alt="GlMusic">
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+            aria-controls="menu" aria-expanded="false" aria-label="Botão do menu">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="menu">
+            <div class="navbar-nav me-auto"
+               style="font-size: x-large; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+               <a class="nav-link" href="guitarras.html" style="color: white;">Guitarras</a>
+               <a class="nav-link" href="baixos.html" style="color: white;">Baixos</a>
+               <a class="nav-link" href="pedais.html" style="color: white;">Pedais</a>
+               <a class="nav-link" href="amplificadores.html" style="color: white;">Amplificadores</a>
             </div>
-
+            <div class="navbar-nav"
+               style="font-size: x-large; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+               <a class="nav-link" href="#janelamodal" style="color: white;"><i class="fas fa-sign-in-alt"></i> Login</a>
+            </div>
          </div>
-
+         </div>
       </nav>
 
-      <br><br>
-      
-      <div id="carousel-id" class = "carousel slide d-none d-md-block mb-4" style = "margin-top: 69px;" data-ride= "carousel" data-interval = "3000">
-         <ol class = "carousel-indicators">
-            <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-id" data-slide-to="1"></li>
-            <li data-target="#carousel-id" data-slide-to="2"></li>
-            <li data-target="#carousel-id" data-slide-to="3"></li>
-         </ol>
-         <div class = "carousel-inner">
-            <div class = "carousel-item active">
-               <a href="amplificadores.html"><img src = "assets/images/Carrosel/C1.jpg" class="d-block bgimage">
-                  <div class="carousel-caption" style="top:100px">
+      <!-- Carrossel -->
+      <div id="carousel-id" class="carousel slide d-none d-md-block mb-4" data-bs-ride="carousel" data-bs-interval="3000">
+         <div class="carousel-indicators">
+         <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+         <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="1" aria-label="Slide 2"></button>
+         <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         <button type="button" data-bs-target="#carousel-id" data-bs-slide-to="3" aria-label="Slide 4"></button>
+         </div>
+
+         <div class="carousel-inner">
+         <div class="carousel-item active">
+            <a href="amplificadores.html">
+               <img src="assets/images/Carrosel/C1.jpg" class="d-block bgimage">
+               <div class="carousel-caption" style="top:100px">
+               <div class="text-center">
+                  <span class="ti">Amplificadores</span>
+               </div>
+               </div>
+            </a>
+         </div>
+         <div class="carousel-item">
+               <a href="baixos.html">
+                  <img src="assets/images/Carrosel/C2.jpg" class="d-block bgimage">
+                  <div class="carousel-caption" style="top: 100px">
                      <div class="text-center">
-                        <span class="ti" style="text-align: center;">Amplificadores</span>
+                     <span class="ti">Baixos</span>
+                     </div>
+                  </div>
+                  </a>
+         </div>
+         <div class="carousel-item">
+               <a href="guitarras.html">
+                  <img src="assets/images/Carrosel/C3.jpg" class="d-block bgimage">
+                  <div class="carousel-caption" style="top: 100px">
+                     <div class="text-center">
+                        <span class="ti">Guitarras</span>
                      </div>
                   </div>
                </a>
-            </div>  
-            <div class = "carousel-item ">
-               <img src = "assets/images/Carrosel/C2.jpg" class="d-block bgimage">
-               <div class="carousel-caption" style="top: 100px ">
-                  <div class="text-center">
-                     <span class="ti">Baixos</span>
-                  </div>
-               </div>
-            </div>     
-            <div class = "carousel-item ">
-               <img src = "assets/images/Carrosel/C3.jpg" class="d-block bgimage">
-               <div class="carousel-caption" style="top: 100px">
-                  <div class="text-center">
-                     <span class="ti" style="color: rgb(255, 255, 255);">Guitarras</span>
-                  </div>
-               </div>
-            </div>     
-            <div class = "carousel-item ">
-               <img src = "assets/images/Carrosel/C4.jpg" class="d-block bgimage">
-               <div class="carousel-caption" style="top: 100px">
-                  <div class="text-center">
-                     <span class="ti">Pedais</span>
-                  </div>
-               </div>
-            </div>            
-         </div>
-         <a href="#carousel-id" class="carousel-control-prev" role="button" data-slide="prev">
-            <span aria-hidden="true" class="carousel-control-prev-icon">
-               <span class="sr-only">Anterior</span>
-            </span>
-         </a>
-         <a href="#carousel-id" class="carousel-control-next" role="button" data-slide="next">
-            <span aria-hidden="true" class="carousel-control-next-icon">
-               <span class="sr-only">Próxima</span>
-
-            </span>
-         </a>
-      </div>
-
-      <div class = "container">
-         <div class = "jumbotron d-block d-md-none text-center" style="background-color: rgb(50, 65, 50); margin-top: 89px;">
-            <h5 style="color: black;" >Empresa de venda de instrumentos musicais.</h5>
-            <br>
-            <h5 style="color: black;">Guitarra, Baixo, Pedal e Amplificador.</h5>
-         </div>
-      </div>
-
-      <div>
-         <h1 class="text-center text-white" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 60px;">Lançamentos</h1>
-         <div class="container my-4">
-            <div class="row">
-               <div class="col-md-6 mb-4">
-                     <h5 class="text-white text-center" style="font-size: 50px; font-style: italic; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Solar</h5>
-                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/px27xhi68GA" allowfullscreen></iframe>
+            </div>
+         <div class="carousel-item">
+               <a href="pedais.html">
+                  <img src="assets/images/Carrosel/C4.jpg" class="d-block bgimage">
+                  <div class="carousel-caption" style="top: 100px">
+                     <div class="text-center">
+                        <span class="ti">Pedais</span>
                      </div>
-               </div>
-         
-               <div class="col-md-6 mb-4">
-                  <h5 class="text-white text-center" style="font-size: 50px; font-style: italic; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Ibanez</h5>
-                  <div class="embed-responsive embed-responsive-16by9">
-                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qNQLYcl2fQY" allowfullscreen></iframe>
                   </div>
+               </a>
+            </div>
+         </div>
+
+         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-id" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Anterior</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carousel-id" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Próxima</span>
+         </button>
+      </div>
+
+      <!-- Toast -->
+      <button type="button" class="btn btn-success border-0" id="liveToastBtn">Não Clique</button>
+
+      <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1060">
+         <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+         <div class="toast-header">
+            <strong class="me-auto">Cupom de desconto</strong>
+         </div>
+         <div class="toast-body">
+            SPLIKNOT
+         </div>
+         </div>
+      </div>
+
+      <!-- Conteúdo mobile -->
+      <div class="container">
+         <div class="p-4 d-block d-md-none text-center bg-light rounded" style="margin-top: 89px;">
+         <h5 style="color: black;">Empresa de venda de instrumentos musicais.</h5>
+         <br>
+         <h5 style="color: black;">Guitarra, Baixo, Pedal e Amplificador.</h5>
+         </div>
+      </div>
+
+      <!-- Lançamentos -->
+      <div>
+         <h1 class="text-center text-white"
+         style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 60px;">Lançamentos
+         </h1>
+         <div class="container my-4">
+         <div class="row">
+            <div class="col-md-6 mb-4">
+               <h5 class="text-white text-center" style="font-size: 50px; font-style: italic;">Solar</h5>
+               <div class="ratio ratio-16x9">
+               <iframe src="https://www.youtube.com/embed/px27xhi68GA" allowfullscreen></iframe>
                </div>
             </div>
+            <div class="col-md-6 mb-4">
+               <h5 class="text-white text-center" style="font-size: 50px; font-style: italic;">Ibanez</h5>
+               <div class="ratio ratio-16x9">
+               <iframe src="https://www.youtube.com/embed/qNQLYcl2fQY" allowfullscreen></iframe>
+               </div>
+            </div>
+         </div>
          </div>
 
          <div class="container my-4" style="padding-bottom: 40px;">
             <div class="row">
-            <!-- Primeiro vídeo -->
-            <div class="col-md-6 mb-4">
-               <h5 class="text-white text-center" style="font-size: 50px; font-style: italic; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Boss</h5>
-               <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6BSzRzLK5Oc?si=y_oaqJl0M22RfrnQ" allowfullscreen></iframe>
-               </div>
-            </div>
-         
-            <!-- Segundo vídeo -->
-            <div class="col-md-6 mb-4">
-               <h5 class="text-white text-center" style="font-size: 50px; font-style: italic; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Fender</h5>
-               <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6afsgyQ30lM?si=tpAaMmGAYElttF-M" allowfullscreen></iframe>
-               </div>
-            </div>
-            </div>
-         </div>
-       </div>
-              
-      <div class="footer">
-         <div class = "container">
-            <div class = "row">
-               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6" style="padding-bottom: 50px;">
-                  <img src="assets/images/logo.png">
-               </div>
-               <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3" style="padding-bottom: 50px;">
-                  <h5 style="color: rgb(255, 255, 255); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 34px; text-align: center;">Redes Sociais</h5>
-                  <div class = "navbar-nav" style="font-size: 20px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">
-                     <a class = "nav-link nav-item" href = "#instagram" style="color: white;"><i class="fab fa-instagram" style="font-size: 32px;"></i> Instagram</a>
-                     <a class = "nav-link nav-item" href = "#youtube" style="color: white;"><i class="fab fa-youtube" style="font-size: 32px"></i> Youtube</a>
+               <div class="col-md-6 mb-4">
+                  <h5 class="text-white text-center" style="font-size: 50px; font-style: italic;">Boss</h5>
+                  <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/6BSzRzLK5Oc?si=y_oaqJl0M22RfrnQ" allowfullscreen></iframe>
                   </div>
-         
                </div>
-               <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3">
-                  <h5 style="color: rgb(255, 255, 255); font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 34px; text-align: center;">Contato</h5>
-                  <div class = "navbar-nav" style="font-size: 20px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">
-                     <a class = "nav-link nav-item" href = "#email" style="color: white;"><i class="fas fa-envelope" style="font-size: 32px"></i> GLmusic@gmail.com</a>
-                     <a class = "nav-link nav-item" href = "#telefone" style="color: white;"><i class="fas fa-phone" style="font-size: 32px;"></i> (99)99999-9999</a>
+               <div class="col-md-6 mb-4">
+                  <h5 class="text-white text-center" style="font-size: 50px; font-style: italic;">Fender</h5>
+                  <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/6afsgyQ30lM?si=tpAaMmGAYElttF-M" allowfullscreen></iframe>
                   </div>
                </div>
             </div>
          </div>
-      </div> 
+      </div>
 
-      <script src="assets/js/jquery-3.3.1.js"></script>
-      <script src="assets/js/popper.js"></script>
-      <script src="assets/js/bootstrap.js"></script>
+      <!-- Rodapé -->
+      <div class="footer">
+         <div class="container text-center">
+         <div class="row text-white">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 pb-5">
+               <img src="assets/images/logo.png">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 pb-5 text-center">
+               <h5 class="fs-3">Redes Sociais</h5>
+               <div class="nav flex-column">
+               <a class="nav-link text-white" href="#instagram"><i class="fab fa-instagram fs-4"></i> Instagram</a>
+               <a class="nav-link text-white" href="#youtube"><i class="fab fa-youtube fs-4"></i> Youtube</a>
+               </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 text-center">
+               <h5 class="fs-3">Contato</h5>
+               <div class="nav flex-column">
+               <a class="nav-link text-white" href="#email"><i class="fas fa-envelope fs-4"></i> GLmusic@gmail.com</a>
+               <a class="nav-link text-white" href="#telefone"><i class="fas fa-phone fs-4"></i> (99)99999-9999</a>
+               </div>
+            </div>
+         </div>
+         </div>
+      </div>
+
+      <!-- Scripts -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
       <script src="assets/js/script.js"></script>
-      
+
 
    </body>
-</html>
+
+   </html>
