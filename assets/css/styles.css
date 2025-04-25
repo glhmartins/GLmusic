@@ -1,3 +1,11 @@
+body{
+    font-family: New Rocker, sans-serif;
+}
+
+nav{
+    font-size: 35px;
+}
+
 .bgimage {
     width: 100%;
     object-fit: cover;
@@ -8,7 +16,6 @@
 .ti {
     font-size: 120px;
     font-style: italic;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     -webkit-text-stroke: 1px black;
     text-shadow:
@@ -30,7 +37,6 @@
 .f {
     margin-bottom: 20px; 
     font-size: x-large; 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .p {
