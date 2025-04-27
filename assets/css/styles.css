@@ -4,6 +4,16 @@ body{
 
 nav{
     font-size: 35px;
+    color: white;
+    background-color: rgb(60, 75, 60);
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover {
+    color: #011801;
 }
 
 .bgimage {
@@ -66,3 +76,20 @@ nav{
     background-color: rgb(60, 75, 60); 
     padding-top: 30px;
   }
+
+
+
+#faqAccordion *{
+    background-color: rgb(60, 75, 60);
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.accordion-body{
+    color: black !important;
+}
+
+.accordion-collapse {
+    transition: all 0.3s ease-in-out;
+}
