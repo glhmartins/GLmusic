@@ -55,7 +55,7 @@ const NavBar = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <NavLink className="nav-link" to="/login">
-                Login
+              <i className="fas fa-sign-in-alt"></i>Login
               </NavLink>
             </li>
           </ul>
