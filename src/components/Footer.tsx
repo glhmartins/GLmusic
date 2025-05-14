@@ -4,7 +4,7 @@ import logo from "../assets/images/logo.png"
 
 const Footer =() => {
     return (
-        <div className="footer bg-gradient">
+        <div className="footer" style={{ backgroundColor: 'rgb(60, 75, 60)', paddingTop: '40px'}}>
          <div className="container">
          <div className="row text-white text-center">
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 pb-5">

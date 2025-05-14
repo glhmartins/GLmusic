@@ -8,9 +8,9 @@ const AmplificadoresPage = () => {
     return (
       <div className="row" style={{paddingBottom: "69px"}}>
          <div className = "col-lg-3 col-md-6">
-             <div className = "card mb-4" style={{marginTop: "80px"}}>
+             <div className = "card mb-4" style={{marginTop: "80px", minHeight: '400px'}}>
                 <span className="badge position-relative bg-danger border border-light rounded-circle">Novo Produto</span>
-                 <img src={fenderChampion} style={{maxHeight: "380px"}} className = "mx-auto d-block img-fluid img-custom"/>
+                 <img src={fenderChampion} style={{maxHeight: "300px", minHeight: '215px'}} className = "mx-auto d-block img-fluid img-custom"/>
                  <div className = "text-center">
                      <h5 className = "card-title f">Fender Champion</h5>
                      <p className="p">R$4199,00</p>
@@ -21,8 +21,8 @@ const AmplificadoresPage = () => {
          </div>
          
          <div className = "col-lg-3 col-md-6">
-             <div className = "card mb-4" style={{marginTop: "80px"}}>
-                 <img src={bossKatana} style={{maxHeight: "400px"}} className = "mx-auto d-block img-fluid img-custom"/>
+             <div className = "card mb-4" style={{marginTop: "80px", minHeight: '400px', paddingTop: '22px'}}>
+                 <img src={bossKatana} style={{maxHeight: "300px", minHeight: '215px'}} className = "mx-auto d-block img-fluid img-custom"/>
                  <div className = "text-center">
                      <h5 className = "card-title f">Boss Katana</h5>
                      <p className="p">R$3099,90</p>
@@ -33,8 +33,8 @@ const AmplificadoresPage = () => {
          </div>
 
          <div className = "col-lg-3 col-md-6">
-             <div className = "card mb-4" style={{marginTop: "80px"}}>
-                 <img src={marshallMG15} style={{maxHeight: "400px"}} className = "mx-auto d-block img-fluid img-custom"/>
+             <div className = "card mb-4" style={{marginTop: "80px", minHeight: '400px', paddingTop: '22px'}}>
+                 <img src={marshallMG15} style={{maxHeight: "300px", minHeight: '215px'}} className = "mx-auto d-block img-fluid img-custom"/>
                  <div className = "text-center">
                      <h5 className = "card-title f">Marshall MG15</h5>
                      <p className="p">R$1390,90</p>
@@ -45,8 +45,8 @@ const AmplificadoresPage = () => {
          </div>
 
          <div className = "col-lg-3 col-md-6">
-             <div className = "card mb-4" style={{marginTop: "80px"}}>
-                 <img src={orangeCrush} style={{maxHeight: "400px"}} className = "mx-auto d-block img-fluid img-custom"/>
+             <div className = "card mb-4" style={{marginTop: "80px", minHeight: '400px', paddingTop: '22px'}}>
+                 <img src={orangeCrush} style={{maxHeight: "300px", minHeight: '215px'}} className = "mx-auto d-block img-fluid img-custom"/>
                  <div className = "text-center">
                      <h5 className = "card-title f">Orange Crush 20  </h5>
                      <p className="p">R$2150,00</p>

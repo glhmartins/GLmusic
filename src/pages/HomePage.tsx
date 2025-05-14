@@ -4,7 +4,7 @@ const HomePage = () => {
       <div className="container">
          <div className="p-4 d-block d-md-none text-center bg-light rounded" style={{marginTop: "89px"}}>
          <h5 style={{color: "black"}}>Empresa de venda de instrumentos musicais.</h5>
-         <br></br>
+         <br />
          <h5 style={{color: "black"}}>Guitarra, Baixo, Pedal e Amplificador.</h5>
          </div>
       </div>
